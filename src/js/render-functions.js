@@ -1,6 +1,7 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+const lightbox = new SimpleLightbox('.gallery a', { captions: false, });
 
 function createGallery(images) {
     const gallery = document.querySelector(".gallery");
@@ -36,10 +37,7 @@ function createGallery(images) {
 
     gallery.insertAdjacentHTML("beforeend", imagesList);
 
-    const lightbox = new SimpleLightbox('.gallery a', {
-        captions: false,
-        captionsData: 'alt',
-        captionDelay: 250, });
+    lightbox.refresh();
 };
 
 function clearGallery() {
