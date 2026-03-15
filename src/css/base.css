@@ -18,7 +18,10 @@
 
 body {
   display: flex;
-  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
